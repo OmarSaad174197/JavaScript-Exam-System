@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+#timer {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.answer-btn {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+.answer-btn:hover:not(:disabled) {
+    background-color: #e9ecef;
+}
+#next-btn {
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#next-btn:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+.progress-background {
+    fill: none;
+    stroke: #e0e0e0;
+}
+.progress-circle {
+    fill: none;
+    stroke: #007bff;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.5s ease; /* Smooth animation */
+}
+.progress-container {
+    text-align: center;
+    margin: 20px 0;
+}
+.result-img {
+    max-width: 300px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+}

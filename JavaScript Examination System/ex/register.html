@@ -1,0 +1,32 @@
+<!-- register.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="2.jpeg" alt="Register Icon" class="icon"> 
+        <h1>Register</h1>
+        <input type="text" id="username" placeholder="Enter username" required oninput="validateInput('username')">
+        <p class="error-message" id="username-error"></p>
+        
+        <input type="email" id="email" placeholder="Enter email" required oninput="validateInput('email')">
+        <p class="error-message" id="email-error"></p>
+        
+        <input type="tel" id="phone" placeholder="Enter phone number" required oninput="validateInput('phone')">
+        <p class="error-message" id="phone-error"></p>
+        
+        <input type="password" id="password" placeholder="Enter password" required oninput="validateInput('password')">
+        <p class="error-message" id="password-error"></p>
+        
+        <button onclick="register()">Register</button>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>
+
